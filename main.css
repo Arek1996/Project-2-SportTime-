@@ -1,0 +1,351 @@
+:root {
+  --main: #55564d;
+  --second-main: #37372f;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Stoke", serif;
+  background-color: #ecece9;
+}
+.container {
+  margin: 0px;
+}
+
+/*zdjecie + animacja*/
+.nawigacja {
+  height: 48px;
+}
+h1 {
+  font-size: 30px;
+  color: var(--main);
+  padding: 10px 10px 10px 40px;
+  letter-spacing: -1;
+  line-height: 1.1;
+  opacity: 0.9;
+}
+#zdjecie {
+  width: 100%;
+  height: 100%;
+  background-image: url(https://images.pexels.com/photos/163444/sport-treadmill-tor-route-163444.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  box-shadow: -3px 6px 33px -2px rgba(66, 68, 90, 0.43);
+}
+h2 {
+  font-size: 98px;
+  padding: 150px 50px 50px 40px;
+  color: var(--main);
+  letter-spacing: -1;
+  line-height: 1.1;
+}
+div #move {
+  margin-top: -107px;
+  margin-left: 345px;
+  animation: bounce 3.5s ease-in;
+}
+#move_text {
+  font-size: 86px;
+}
+#move_text_2 {
+  font-size: 62px;
+  color: var(--second-main);
+  box-shadow: -1px 14px 49px 6px rgba(66, 68, 90, 0.94);
+}
+#move_text_2:hover {
+  font-size: 86px;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-800%);
+  }
+  30% {
+    transform: translateY(300%);
+  }
+  60% {
+    transform: translateY(-200%);
+  }
+  90% {
+    transform: translateY(100%);
+  }
+  95% {
+    transform: translateY(50%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/*sekcja z rozwijanymi artykulami*/
+h3 {
+  color: var(--main);
+  font-size: 52px;
+  letter-spacing: -0.5px;
+  margin-bottom: 48px;
+  text-align: center;
+  padding-top: 32px;
+  margin-top: 96px;
+}
+h4 {
+  color: var(--main);
+  font-size: 36px;
+  letter-spacing: -0.5px;
+  margin-bottom: 24px;
+  margin-top: 24px;
+  text-align: center;
+  opacity: 0.9;
+}
+h4:hover {
+  opacity: 0.7;
+  transform: rotateY(20deg);
+  transition: 1s;
+  box-shadow: var(--main);
+}
+.text {
+  color: var(--second-main);
+  font-size: 30px;
+  letter-spacing: -0.5px;
+  margin-top: 0px;
+  margin-bottom: 32px;
+  margin-left: 32px;
+  margin-right: 32px;
+  padding: 16px;
+  border-bottom: 1px solid var(--main);
+  opacity: 0.8;
+}
+#lasttext {
+  margin-bottom: 0px;
+  color: #37372f;
+  font-size: 30px;
+  letter-spacing: -0.5px;
+  margin-top: 0px;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-bottom: 2px;
+  padding: 16px;
+  border-bottom: 1px solid var(--main);
+}
+.arrow {
+  font-size: 30px;
+  padding: 5px;
+  color: var(--main);
+}
+
+/*sekcja- zdjecie artykul*/
+.section_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 90px;
+  margin-top: 128px;
+  margin-bottom: 96px;
+}
+#foto2 {
+  margin-left: 32px;
+}
+#article2 h3 {
+  color: var(--main);
+  font-size: 36px;
+  letter-spacing: -0.5px;
+  text-align: center;
+  margin-top: -15px;
+  opacity: 0.9;
+}
+.paragraph_text {
+  color: var(--main);
+  font-size: 30px;
+  letter-spacing: -0.5px;
+}
+.paragraph_text::first-letter {
+  font-weight: bold;
+}
+
+/*sekcja 6*foto*/
+#fotossection h3 {
+  color: var(--main);
+  font-size: 52px;
+  letter-spacing: -0.5px;
+  text-align: center;
+  margin-bottom: 24px;
+  margin-top: 128px;
+}
+#fotosgroup {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 90px;
+  margin-right: 32px;
+  margin-left: 32px;
+  position: relative;
+}
+#fotosgroup img {
+  opacity: 0.6;
+  padding-top: 24px;
+}
+#fotosgroup img:hover {
+  opacity: 0.9;
+  border-radius: 5px;
+}
+#exercises {
+  position: relative;
+}
+#exercises_text {
+  position: absolute;
+  padding-top: 180px;
+  padding-left: 100px;
+  font-size: 70px;
+  color: #151613;
+}
+
+/*formularz z email*/
+.formetext {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 90px;
+  width: 100%;
+  height: 500px;
+  margin-top: 128px;
+  background-color: #9d9f93;
+}
+.formtekst #firstp {
+  color: var(--second-main);
+  font-size: 52px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  margin-left: 32px;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+.formtekst #secondp {
+  color: var(--second-main);
+  font-size: 52px;
+  margin-bottom: 50px;
+  margin-left: 32px;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+#formm {
+  position: relative;
+  margin-top: 330px;
+  margin-left: 180px;
+}
+#labe {
+  font-size: 44px;
+  color: var(--second-main);
+  letter-spacing: -1px;
+  line-height: 1.1;
+}
+#email {
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  background-color: #c4c5be;
+  border-radius: 90px;
+  margin-top: 0px;
+  margin-left: 20px;
+  font-size: 30px;
+  padding-left: 16px;
+  color: var(--second-main);
+  border-style: none;
+}
+#formm #email:hover {
+  border-style: none;
+  background-color: #808273;
+}
+#send {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #c4c5be;
+  border-radius: 80px;
+  margin-top: 0px;
+  margin-left: 250px;
+  color: var(--main);
+  border-style: none;
+}
+#formm #send:hover {
+  background-color: #808273;
+  border-style: none;
+  color: #151613;
+}
+
+/*form dla mniejszej rozdzielczosci */
+.formtekst_2 p {
+  color: var(--second-main);
+  font-size: 52px;
+  margin-top: 80px;
+  margin-left: 32px;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+#labe_2 {
+  font-size: 44px;
+  color: var(--second-main);
+  letter-spacing: -1px;
+  line-height: 1.1;
+}
+#email_2 {
+  width: 200px;
+  height: 50px;
+  background-color: #c4c5be;
+  border-radius: 90px;
+  font-size: 30px;
+  color: var(--second-main);
+  border-style: none;
+}
+#email_2:hover {
+  border-style: none;
+  background-color: #808273;
+}
+#send_2 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #c4c5be;
+  border-radius: 80px;
+  margin-top: 10px;
+  margin-left: 20px;
+  color: var(--main);
+  border-style: none;
+}
+#send_2:hover {
+  background-color: #808273;
+  border-style: none;
+  color: #151613;
+}
+
+/*respo*/
+@media screen and (max-width: 1500px) {
+  .section_grid {
+    display: block;
+    padding: 20px;
+  }
+  #foto2 {
+    display: none;
+  }
+}
+@media screen and (min-width: 1152px) {
+  .formetext_2 {
+    display: none;
+  }
+}
+@media screen and (max-width: 1152px) {
+  .formetext {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  #fotosgroup {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 600px) {
+  #zdjecie h2 {
+    display: none;
+  }
+}
